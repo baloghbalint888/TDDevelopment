@@ -1,0 +1,560 @@
+header {
+    background-image: url(../imgs/header.jpg);
+    background-size: cover;
+}
+.asd{
+    background-image: linear-gradient(white,rgb(207, 248, 250));
+}
+.sep{
+    height: 3px;
+    border-width:0;
+    background-color: rgb(144, 210, 221);
+    width: 100%;
+    margin: 0%;
+}
+.logo{
+    size: 20%;
+    width: 15%;
+}
+
+.lista1{
+    margin: auto;
+}
+#dia{
+    width: min-content;
+    height: min-content;
+
+}
+.code{
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-weight: bold;
+    border: none;
+    overflow-x: hidden;
+    margin: 30px;
+    
+}
+.small-container {
+    width: 95%;
+    height: auto;
+    margin: auto;
+    margin-top: -50px;
+    font-weight: bold;
+}
+#gallery{
+    border-radius: 20px;
+}
+.overlay {
+    background-color: rgba(0, 0, 0, .51);
+    width: 100%;
+    height: 100%;
+}
+
+.violet-overlay {
+    background-color: rgba(189, 140, 191, .51);
+    width: 100%;
+    height: 100%;
+    padding: 70px 0;
+}
+
+.white-overlay {
+    background-color: rgba(255, 255, 255, .7);
+    height: 100%;
+    width: 100%;
+}
+
+h1{
+    size: 100px;
+}
+h3{
+    padding: 40px;
+    font-size: 30px;
+    text-align: center;
+    font-weight: bold;
+}
+
+h2 span, h1 span, h3 span {
+    color: skyblue;
+
+}
+
+.logo{
+    width: 20%;
+}
+
+#show-menu{
+    text-align: center;
+    font-size: large;
+}
+.logocska{
+    width: 30%;
+    height: 30%;
+    filter: invert();
+
+    
+}
+.nav-link:hover{
+    font-size: 20px;
+}
+a:hover {
+    text-decoration: none;
+}
+
+a, button {
+    transition: all .5s ease;
+}
+
+button {
+    padding: 0
+}
+
+body {
+    font-size: 1.1rem;
+    overflow-x: hidden;
+}
+p{
+    margin-bottom: 10px;
+}
+
+nav.navbar {
+    position: absolute;
+    top: 0;
+    left: 0;
+    
+    width: 100%;
+    z-index: 1000;
+    height: 8%;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: bold;
+    
+}
+.szeles{
+    width: 100%;
+}
+
+nav.navbar a, nav.navbar ul li a {
+    color: white !important;
+}
+
+nav.navbar ul li {
+    padding: 0 15px;
+}
+
+nav.navbar .search-container {
+    position: relative;
+}
+
+nav.navbar form {
+    padding: 5px;
+    background-color: white;
+    position: absolute;
+    width: 260px;
+    display: none;
+}
+
+nav.navbar form input {
+    padding: 5px 10px;
+    border: 1px solid #b7b5b5;
+    background-color: #e6e3e3;
+    width: 100%;
+}
+
+/* header */
+
+header {
+    position: relative;
+    color: #FFF;
+    font-family: 'Roboto', sans-serif;
+}
+
+header .container {
+    height: 100%
+}
+
+header .container > div {
+    margin: 0 auto;
+    position: relative;
+/*    text-align: center;*/
+}
+
+header .container > div h1 {
+    font-size: 90px;
+}
+
+header button {
+    background-color: transparent;
+    display: block;
+    border: 1px solid #FFF;
+    border-radius: 50px;
+    padding: 0;
+    margin: 30px auto;
+}
+
+header button a {
+    padding: 10px 40px;
+    display: block;
+    color: #FFF;
+}
+
+header button:hover {
+    background-color: #bd8cbf;
+    border: 1px solid #bd8cbf;
+}
+
+header button:hover a {
+    color: white;
+}
+
+
+
+.about-us {
+    position: relative;
+    padding: 100px 0;
+    font-family: 'Open Sans', sans-serif;
+    background-image: linear-gradient(white,rgb(207, 248, 250));
+    
+}
+
+.about-us .row > .col-lg-6:first-of-type {
+    position: relative;
+    left: 50px;
+}
+
+p, h2{
+    z-index: 1000;
+}
+
+.about-us .small-container > p + div {
+    padding: 70px 0;
+    background-color: white;
+    box-shadow: 5px 5px 10px #d2cfcf, -5px -5px 10px #d2cfcf;
+}
+
+.about-us .small-container > p + div h4 {
+    margin-bottom: 40px;
+}
+
+.about-us .small-container .text-right p {
+    margin-bottom: 40px;
+    width: 80%;
+    float: right;
+}
+
+.about-us .small-container > p + div button {
+    background-color: #bd8cbf;
+    border: none;
+}
+
+.about-us .small-container > p + div a {
+    display: block;
+    color: #FFF;
+    padding: 10px 40px;
+}
+
+.about-us .item {
+    width: 200px;
+    position: absolute;
+    color: white;
+    background-color: #bd8cbf;
+}
+
+.about-us .item p {
+    font-size: 15px;
+}
+
+.about-us .item h5 {
+    margin: 5px 0;
+}
+
+.about-us .item p {
+    margin-bottom: 5px;
+}
+
+
+
+.about-us .first {
+    width: 100px;
+    height: 200px;
+    position: absolute;
+    background-image: linear-gradient(skyblue,white);
+    top: 0px;
+    z-index: 2;
+    margin-right: 100px;
+
+}
+
+
+.agency .second {
+    width: 100px;
+    height: 200px;
+    position: absolute;
+    background-image: linear-gradient(skyblue,white);
+    right: 34px;
+    z-index: 2;
+    margin-left: 100px;
+    top: 100%;
+    left: 82%;
+    
+}
+
+ol{
+    margin: auto;
+}
+li{
+    margin: 10px;
+}
+
+/* services */
+
+.services {
+    margin-bottom: 100px;
+    font-family: 'Open Sans', sans-serif;
+    height: auto;
+    background-image: linear-gradient(rgb(207, 248, 250),white);
+    margin-bottom: 0px;
+}
+
+.services .slide {
+    width: 70%;
+    margin: 0 auto;
+}
+
+.services .carousel-inner .carousel-item {
+    width: 100%;
+    height: 100%
+}
+
+.services .carousel-inner img {
+    height: 100%;
+    width: 100%;
+}
+
+.services .carousel-control-next, .services .carousel-control-prev {
+    width: 60px;
+    height: 60px;
+    background: skyblue;
+    border-radius: 50%;
+}
+
+.services .carousel-control-next i, .services .carousel-control-prev i {
+    color: #000
+}
+
+.services .carousel-control-next {
+    right: 0;
+    top: 50%;
+    right: 5%;
+    background-color: #FFF;
+}
+
+.services .carousel-control-prev {
+    top: 50%;
+    left: 5%;
+}
+
+.services i {
+    color: skyblue;
+}
+
+/* agency */
+
+.agency {
+    background-image: linear-gradient(rgb(207, 248, 250),white);
+    font-family: 'Open Sans', sans-serif;
+    background-size: cover;
+    background-position: top;
+    height: auto;
+    font-weight: bold;
+}
+
+
+
+
+
+footer, footer a {
+    color: black;
+}
+
+footer {
+    display: block;
+    overflow: hidden;
+    background-image: linear-gradient(to right, skyblue,white);
+}
+
+footer a:hover {
+    color: #bd8cbf
+}
+
+footer .container > ul {
+    overflow: hidden;
+    margin: 30px 0;
+    padding-left: 0;
+}
+
+footer .container > ul li {
+    float: left;
+    padding-right: 25px;
+}
+
+footer .item h4 {
+    margin-bottom: 20px
+}
+
+
+
+
+/* media queries */
+
+
+
+    /* agency */
+    
+    .agency img:first-of-type, .agency img:last-of-type {
+        width: 150px
+    }
+    .agency .container > div > div img {
+        max-width: 400px;
+        width: 100%;
+    }
+    .agency .container > div h2 {
+        bottom: 87px;
+        left: 164px;
+        font-size: 30px;
+    }
+    .agency .container > div h2 {
+        display: none;
+    }
+
+
+
+@media (max-width: 992px) {
+    
+    /* header */
+    
+    header h1 {
+        font-size: 65px !important;
+    } 
+    
+    /* navbar */
+    
+    .navbar ul {
+        background-color: rgba(0, 0, 0, .8);
+    }
+    .navbar ul li {
+        margin: 10px 0;
+    }
+    nav.navbar form {
+        width: 100%;
+        position: static;
+    }
+    
+    /* about */
+    
+    .about-us .small-container > p + div {
+        padding: 50px 0;
+    }
+    .about-us .row > .col-lg-6:first-of-type {
+        height: 350px;
+        left: 50px;
+    }
+    .about-us .small-container .text-right p {
+        width: 100%;
+    }
+    
+    /* services */
+    
+    .services .slide {
+        width: 80%
+    }
+    
+    .services .carousel-control-next, .services .carousel-control-prev {
+        width: 50px;
+        height: 50px;
+    }
+    
+    /* agency */
+    
+    .agency img:first-of-type, .agency img:last-of-type {
+        display: none
+    }
+    .agency .container > div > div img {
+        display: block;
+    }
+    .agency .container > div {
+        width: 56%;
+    }
+    
+    /* statistics */
+    
+    .statistics .col-lg-3 {
+        margin-bottom: 40px
+    }
+    
+    /* contact */
+    
+    .contact .contact-form {
+        width: 70%
+    }
+    
+    /* footer */
+    
+    footer .col-lg-3 {
+        margin-bottom: 40px;
+    }
+    
+}
+
+@media (max-width: 768px) {
+    
+    /* header */
+    
+    header h1 {
+        font-size: 50px !important;
+    } 
+    
+    /* about */
+    
+    .about-us .row > .col-lg-6:first-of-type {
+        display: none;
+    }
+    
+    /* services */
+    
+    .services .slide {
+        width: 90%
+    }
+    .services .carousel-control-next, .services .carousel-control-prev {
+        display: none;
+    }
+    
+    /* agency */
+    
+    .agency .container > div {
+        width: 87%;
+    }
+    
+}
+#myBtn {
+    display: none; /* Hidden by default */
+    position: fixed; /* Fixed/sticky position */
+    bottom: 20px; /* Place the button at the bottom of the page */
+    right: 30px; /* Place the button 30px from the right */
+    z-index: 99; /* Make sure it does not overlap */
+    border: none; /* Remove borders */
+    outline: none; /* Remove outline */
+    background-color: transparent;
+    color: white; /* Text color */
+    cursor: pointer; /* Add a mouse pointer on hover */
+    padding: 15px; /* Some padding */
+    border-radius: 10px; /* Rounded corners */
+    font-size: 18px; /* Increase font size */
+    width: 35px;
+    height: 35px;
+  }
+  
+  #myBtn:hover {
+    width: 40px;
+    height: 40px;
+  }
+body{
+    margin-right: -15px;
+}
