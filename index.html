@@ -25,14 +25,15 @@
                             <a class="nav-link" href="#about">Egységtesztek</a>
                         </li>
                         <li class="nav-item" style="padding-top: 20px;">
-                            <a class="nav-link" href="#minta">Szoftverek</a>
+                            <a class="nav-link" href="#lepesek">Lépések</a>
+                        </li>
+                        <li class="nav-item" style="padding-top: 20px;">
+                            <a class="nav-link" href="#software">Szoftverek</a>
                         </li>
                         <li class="nav-item" style="padding-top: 20px;">
                             <a class="nav-link" href="#service">IntelliJ</a>
                         </li>
-                        <li class="nav-item" style="padding-top: 20px;">
-                            <a class="nav-link" href="#minta">Mintafeladatok</a>
-                        </li>
+
                         <li class="nav-item" style="padding-top: 20px;">
                             <a class="nav-link" href="#minta">Mintafeladatok</a>
                         </li>
@@ -63,7 +64,7 @@
                             Az egység vagy alkatrész tesztelése. Alapvetően a fejlesztők végzik, hogy eldöntsék azt, hogy kódjuk megfelelően működik-e és megfelel a felhasználói előírásoknak. Kipróbálják az általuk írt kódrészleteket, például osztályokat, funkciókat, interfészeket és eljárásokat. A szoftver hibáinak észlelése a "nap elején" annak előnye, hogy ezzel a csapat minimalizálja a szoftverfejlesztési kockázatokat, mert az időt és pénzt pazarolja, ha vissza kell térnie és meg kell oldania a program alapvető problémáit, miután majdnem elkészült.
                            </p>
                            <p>
-                            A unit-teszt, vagy más néven egységteszt, a metódusokat teszteli. Adott paraméterekre ismerjük a metódus visszatérési értékét. A unit-teszt megvizsgálja, hogy a tényleges visszatérési érték megegyezik-e az elvárttal. Ha igen, sikeres a teszt, egyébként sikertelen.
+                            A unit-teszt, vagy más néven egységteszt, a metódusokat teszteli. Adott paraméterekre adjuk meg a metódus visszatérési értékét. A unit-teszt megvizsgálja, hogy a tényleges visszatérési érték megegyezik-e az elvárttal. Ha igen, sikeres a teszt, egyébként sikertelen.
                            </p>
                         </div>
                     </div>
@@ -77,14 +78,14 @@
         <div class="agency" id="lepesek">
             
                 <h2 class="text-center" style="font-weight: bold; padding: 30px;">Az <span>egységtesztelés</span> lépései</h5>
-                <div class="row" id="sor" style="width: max-content;">
-                    <div class="lista col-lg-9 col-12">
+                <div class="row" id="sor" >
+                    <div class="lista1 col-lg-6 col-12">
                         <ol type="1">
                             <li>Értelmezési tartomány meghatározása</li>
                             <p>   Milyen adatokra van értelmezve a feladat..</p>
                             <li>Értékkészlet meghatározása</li>
                             <p>   Ezeket adhatja vissza a metódus..</p>
-                            <li>Bemeneti-kimeneti értékpárok meghatározása</li>
+                            <li>Input-Output értékpárok meghatározása</li>
                             <p >Adott bemenő érték esetén mi a kimeneti érték?</p>
                             <li>Teszt megírása</li>
                             <p>   Ez a tesztesetek elkészítését jelenti. (JUNIT5)</p>
@@ -99,15 +100,14 @@
                             <p> Fejlesztőknek dokumentáljuk a tesztpéldányunkat.</p>
                         </ol>
                     </div>
-                    <div class="lista1 col-lg-3 col-12">
-                        <img id="dia" src="imgs/dia.png" alt="Egységteszt diagram">
+                    <div class="lista1 col-lg-6 col-12">
+                        <img id="dia" src="imgs/sdf.png" alt="Egységteszt diagram">
                     </div>
-                    <div class="second"></div>
                 </div>
 
         </div>
-        <div class="asd" id="minta">
-            <h2 class="text-center" style="font-weight: bold; padding: 30px;">Felhasználható <span>szoftverek</span></h5>
+        <div class="asd" id="software">
+            <h2 class="text-center" style="font-weight: bold; padding: 30px;">Felhasználható <span>szoftverek</span></h2>
                 <div class="container">
 
                     <div>
@@ -169,9 +169,7 @@
                         </div>
                     </div>
                 </div>
-            
         </div>
-
         <div class="services" id="service">
             <div class="container">
                 <h3 style="padding: 60px;">Az <span>IntelliJ</span> használata</h3>
@@ -210,41 +208,107 @@
                 </div>
             </div>
         </div>
- 
-        <div class="asd" id="minta">
+        <div class="services" id="service">
+            <div class="container"></div>
+
+        </div>
+    </div>
+
+    <div class="asd" id="hotkeys">
+        <h2 class="text-center">Gyorsbillentyűk, <span>hotkeys</span></h2>
+        <div class="container">
+            <p class="text-justify" style="padding: 2%;"> Az IntelliJ IDEA gyorsbillentyűparancsokkal,másnéven "hotkey"-ekkel rendelkezik a parancsok többségéhez, amelyek a szerkesztéshez, a navigációhoz, a refaktoráláshoz, a hibakereséshez és más feladatokhoz kapcsolódnak. Ezeknek a gyorsbillentyűknek a használata segít hozzá a gyorsabb munkavégzéshez. </p>
+        </div>
+
+
+        <div class="container" style="width: 100%">
+            
+            <div class="col-lg-12 col-12">
+                <div class="container" >
+                    <p class="bill"><kbd>CTRL</kbd>+<kbd>S</kbd></p>
+                    <p>Mentés..</p>
+                </div>
+                <div class="container" >
+                    <p class="bill"><kbd>ALT</kbd>+<kbd>ENTER</kbd></p>
+                    <p>Elem classpath importálása..</p>
+                </div>
+                <div class="container" >
+                    <p class="bill"><kbd>Shift</kbd>+<kbd>Shift</kbd></p>
+                    <p>Keresés mindenhol az intelliJ-ben. Ami még jobban kielemezve a következőt jelenti gyorsan megtalálhat bármilyen fájlt, műveletet, szimbólumot, eszközablakot vagy beállítást az IntelliJ IDEA-ban, a projektben és az aktuális Git-tárban..</p>
+                </div>
+                <div class="container" >
+                    <p class="bill"><kbd>Ctrl</kbd>+<kbd>Shift</kbd>+<kbd>A</kbd></p>
+                    <p>Parancs keresése és futtatása...</p>
+                </div>
+                <div class="container" >
+                    <p class="bill"><kbd>Ctrl</kbd>+<kbd>W</kbd>, <kbd>Ctrl</kbd>+<kbd>Shift</kbd>+<kbd>W</kbd></p>
+                    <p>Kijelölés bővítése, csökkentése..</p>
+                </div>                    
+                <div class="container" >
+                    <p class="bill"><kbd>Ctrl</kbd>+<kbd>Alt</kbd>+<kbd>S</kbd></p>
+                    <p>Billentyűtérkép a beállítások párbeszédpanelen belül..</p>
+                </div>
+                <div class="container" >
+                    <p class="bill"><kbd>Ctrl</kbd>+<kbd>E</kbd></p>
+                    <p>Mostanában megnyitott fájlok..</p>
+                </div>   
+                <div class="container" >
+                    <p class="bill"><kbd>Alt</kbd>+<kbd>Insert</kbd></p>
+                    <p>Előre legenerálható kódok..</p>
+                </div>   
+                <div class="container" >
+                    <p class="bill"><kbd>Ctrl</kbd>+<kbd>P</kbd></p>
+                    <p>Ezzel a billentyűzetparanccsal lehet a már bezárt ablakokat újból meghívni.</p>
+                </div>   
+                <div class="container" >
+                    <p class="bill"><kbd>Shift</kbd>+<kbd>F6</kbd></p>
+                    <p>Ezzel a billentyűzetparanccsal lehet átnevezni a kódban a fájlok, könyvtárak, csomagok, modulok nevét és az azokra vonatkozó összes hivatkozást.</p>
+                </div>   
+                <div class="container" >
+                    <p class="bill"><kbd>Ctrl</kbd>+<kbd>Y</kbd></p>
+                    <p>Egy egész sort töröl.</p>
+                </div>   
+                <div class="container" >
+                    <p class="bill"><kbd>Ctrl</kbd>+<kbd>D</kbd></p>
+                    <p>Duplikálja aaza pontos másolatot készít a már kijelölt sor vagy kijelölt elemről.</p>
+                </div>   
+                <div class="container" >
+                    <p class="bill"><kbd>Shift</kbd>+<kbd>F9</kbd></p>
+                    <p>Ezzel lehet hibakeresési módban futtatni az Intellij projektemet.</p>
+                </div>      
+            </div>
+        </div>
+    </div>
+
+        <div class="asd" id="minta" style="background-image: linear-gradient(rgb(207, 248, 250),white);">
                 <div class="container">
                     <h2 class="text-center" style="padding: 60px;">Mintafeladatok</h2>
                     <div>
                         <div class="row">
                             <div class="col-lg-6 col-12">
                                 <pre class="code">
-    import org.junit.jupiter.api.DisplayName;
-    import org.junit.jupiter.api.Test;
+public class TDDProjekmukaEgyikFeladat {
+    @Test
+    @DisplayName("Az első általunk kitalált feladat teszetelése")
+    public void elsoFeladatTest() {
+        assertEquals(-1, kiSzamol(-64, -10));
+        assertEquals(0, kiSzamol(0, 0));
+        assertEquals(10256, kiSzamol(10, 256));
+        assertEquals(-1, kiSzamol(45, -5));
+        assertEquals(-1, kiSzamol(-5, 45));
+        assertEquals(-1, kiSzamol(35, 1230));
+        assertEquals(-1, kiSzamol(-3, 1003));
+        assertEquals(6000, kiSzamol(6, 0));
+        assertEquals(124, kiSzamol(0, 124));
+
+}
     
-    import static org.junit.jupiter.api.Assertions.assertEquals;
-    
-    public class TDDProjekmukaEgyikFeladat {
-        @Test
-        @DisplayName("Az első általunk kitalált feladat teszetelése")
-        public void elsoFeladatTest() {
-            assertEquals(-2, kiSzamol(-64, -10));
-            assertEquals(0, kiSzamol(0, 0));
-            assertEquals(10256, kiSzamol(10, 256));
-            assertEquals(-2, kiSzamol(45, -5));
-            assertEquals(-2, kiSzamol(-5, 45));
-            assertEquals(-2, kiSzamol(35, 1230));
-            assertEquals(-2, kiSzamol(-3, 1003));
-            assertEquals(6000, kiSzamol(6, 0));
-            assertEquals(124, kiSzamol(0, 124));
-    
-        }
-    
-        private int kiSzamol(int km, int m) {
-            if (km < 0 || m < 0 || m > 1000)
-                return -2;
-            return 1000*km+m;
-        }
-    }
+    private int kiSzamol(int km, int m) {
+           if (km < 0 || m < 0 || m > 1000)
+               return -1;
+        return 1000*km+m;
+     }
+}
     
     
     
@@ -252,27 +316,28 @@
                             </div>
                             <div class="col-lg-6 col-12">
                                 <p>
-                                    Értelmezési tartomány megadása
-                                        1. paraméter : km : 1-től bármennyi lehet
-                                        2. paraméter : m : 0-1000-ig
+                                    <b>Értelmezési tartomány megadása</b> 
+                                       <p>1. paraméter : km : 1-től bármennyi lehet
+                                        2. paraméter : m : 0-1000-ig</p> 
                                 <p>
-                                    Értékkészlet meghatározása:
-                                    Az adott érték átváltása km-ből m-be.
+                                   <b>Értékkészlet meghatározása</b>  
+                                    <p>Az adott érték átváltása km-ből m-be.</p> 
                                 </p>
                                 <p> 
-                                    Kategóriák meghatározása:
-                                    <pre>
-                                    - mindkettő negatív
-                                    - mindkettő nulla
-                                    - mindkettő jó
-                                    - A p1 pozitív, a p2 negatív
-                                    - A p1 negatív, a p2 pozitív
-                                    - p1 pozitív, a p2 tulcsordult
-                                    - p1 negatív, a p2 túlcsordult
-                                    - p1 pozitív, a p2 nulla (térjen vissza a rendes értékkel)
-                                    - p1 nulla, p2 negatív  (ilyen esetben is a rendes értéket adja vissza)</pre>
+                                   <b>Kategóriák meghatározása:</b> 
+                                    <ul>
+                                    <li>mindkettő negatív</li> 
+                                    <li>mindkettő nulla</li>
+                                    <li>mindkettő jó</li>
+                                    <li>A p1 pozitív, a p2 negatív</li>
+                                    <li>A p1 negatív, a p2 pozitív</li>
+                                    <li>p1 pozitív, a p2 túlcsordult</li>
+                                    <li>p1 negatív, a p2 túlcsordult</li>
+                                    <li>p1 pozitív, a p2 nulla (térjen vissza a rendes értékkel)</li>
+                                    <li>p1 nulla, p2 negatív  (ilyen esetben is a rendes értéket adja vissza)  </li>
+                                    </ul>
 
-                                  Ha hibás értéket adunk át paraméterként, akkor térjen vissza 0-val</p>
+                                  Ha hibás értéket adunk át paraméterként, akkor térjen vissza -1-el</p>
                                 </p>
                             </div>
                         </div>
@@ -338,3 +403,4 @@
         </script>
     </body>
 </html>
+

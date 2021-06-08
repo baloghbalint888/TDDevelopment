@@ -19,10 +19,15 @@ header {
 
 .lista1{
     margin: auto;
+
+}
+
+#lepesek{
+    margin: auto;
 }
 #dia{
-    width: min-content;
-    height: min-content;
+    width: max-content;
+    height: max-content;
 
 }
 .code{
@@ -32,6 +37,14 @@ header {
     overflow-x: hidden;
     margin: 30px;
     
+}
+.lista1 li{
+    font-size: larger;
+}
+.lista1 p{
+    font-style: italic;
+    padding-left: 5%;
+    font-size: smaller;
 }
 .small-container {
     width: 95%;
@@ -76,7 +89,9 @@ h2 span, h1 span, h3 span {
     color: skyblue;
 
 }
-
+kbd{
+    font-size: larger;
+}
 .logo{
     width: 20%;
 }
@@ -91,6 +106,10 @@ h2 span, h1 span, h3 span {
     filter: invert();
 
     
+}
+#hotkeys{
+    padding:5%;
+    background-image: linear-gradient(white,rgb(207, 248, 250));
 }
 .nav-link:hover{
     font-size: 20px;
@@ -205,7 +224,9 @@ header button:hover a {
 }
 
 
-
+#doboz{
+    border:black 5px;
+}
 .about-us {
     position: relative;
     padding: 100px 0;
@@ -532,6 +553,15 @@ footer .item h4 {
         width: 87%;
     }
     
+}
+.bill{
+    font-weight: bolder;
+    font-family: monospace;
+}
+
+#sor{
+    width: max-content;
+    margin: auto;
 }
 #myBtn {
     display: none; /* Hidden by default */
