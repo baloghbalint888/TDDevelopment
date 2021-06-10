@@ -4,7 +4,10 @@
         
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="keywords" content="JUNIT5, Java, IntelliJ">
+        <meta name="authors" content="Balogh Bálint, Nagy Gergely">
         <title>Test-driven development</title>
+        <link rel="icon" href="imgs/ico.png">
         <link rel="stylesheet" href="css/bootstrap.min.css">
         <link rel="stylesheet" href="css/style.css">
         <link rel="stylesheet" href="css/fontawesome.min.css">
@@ -33,7 +36,9 @@
                         <li class="nav-item" style="padding-top: 20px;">
                             <a class="nav-link" href="#service">IntelliJ</a>
                         </li>
-
+                        <li class="nav-item" style="padding-top: 20px;">
+                            <a class="nav-link" href="#hotkeys">Gyorsbillentyűk</a>
+                        </li>
                         <li class="nav-item" style="padding-top: 20px;">
                             <a class="nav-link" href="#minta">Mintafeladatok</a>
                         </li>
@@ -60,8 +65,9 @@
                 <div>
                     <div class="container">
                         <div class="row">
+                            <p>A számítógép-programozásban az egységtesztelés a szoftvertesztelésnek egy olyan módszere, amelynek során a forráskód egységeit (egy vagy több számítógépes program modul készletet) a kapcsolódó vezérlő adatokkal, a felhasználási-és a működtető eljárásokkal együtt tesztelik annak meghatározására, hogy azok elérik-e kitűzött céljukat.</p>
                            <p>
-                            Az egység vagy alkatrész tesztelése. Alapvetően a fejlesztők végzik, hogy eldöntsék azt, hogy kódjuk megfelelően működik-e és megfelel a felhasználói előírásoknak. Kipróbálják az általuk írt kódrészleteket, például osztályokat, funkciókat, interfészeket és eljárásokat. A szoftver hibáinak észlelése a "nap elején" annak előnye, hogy ezzel a csapat minimalizálja a szoftverfejlesztési kockázatokat, mert az időt és pénzt pazarolja, ha vissza kell térnie és meg kell oldania a program alapvető problémáit, miután majdnem elkészült.
+                            Alapvetően fejlesztők végzik, hogy eldöntsék azt, hogy kódjuk megfelelően működik-e és megfelel a felhasználói előírásoknak. Kipróbálják az általuk írt kódrészleteket, például osztályokat, funkciókat, interfészeket és eljárásokat. A szoftver hibáinak észlelése a "nap elején" annak előnye, hogy ezzel a csapat minimalizálja a szoftverfejlesztési kockázatokat, mert az időt és pénzt pazarolja, ha vissza kell térnie és meg kell oldania a program alapvető problémáit, miután majdnem elkészült.
                            </p>
                            <p>
                             A unit-teszt, vagy más néven egységteszt, a metódusokat teszteli. Adott paraméterekre adjuk meg a metódus visszatérési értékét. A unit-teszt megvizsgálja, hogy a tényleges visszatérési érték megegyezik-e az elvárttal. Ha igen, sikeres a teszt, egyébként sikertelen.
@@ -70,7 +76,7 @@
                     </div>
                 </div>
                 <div class="first"></div>
-                
+                <div class="second"></div>
             </div>
         </div>
         
@@ -132,7 +138,7 @@
                                         <a href="https://hu.wikipedia.org/wiki/Apache_Maven" style="font-style: italic;">Forrás: Wikipédia</a> 
                                     </p>
                                     <p>A JUnit 5.x.x hozzáadása igen egyszerű, szimplán hozzáadjuk az alábbi három függőséget az automatikusan generált pom.xml-fájlunkhoz IntelliJ alatt.
-                                        (dependencies tagek közé!)
+                                        <i><b>(dependencies tagek közé!)</b></i>
                                     </p>
                                     
                                 </div>
@@ -171,10 +177,10 @@
                 </div>
         </div>
         <div class="services" id="service">
-            <div class="container">
-                <h3 style="padding: 60px;">Az <span>IntelliJ</span> használata</h3>
-                
-            </div>
+            <div class="jumbotron" id="jumbo">
+                <h1 class="display-5 text-center">Az <span>IntelliJ</span>  használata, tesztelés</h1>
+                <hr class="my-1">
+              </div>
             <div class="small-container">
                 <div id="slideToNext" class="carousel slide" data-ride="carousel">
                   <div class="carousel-inner" id="gallery">
@@ -191,11 +197,54 @@
                       </div>
                     </div>
                     <div class="carousel-item">
-                      <img src="imgs/projektfa.png" class="d-block w-100" alt="...">
+                      <img src="imgs/import.png" class="d-block w-100" alt="...">
                       <div class="carousel-caption d-none d-md-block">
-                        <h5>Egy tesztelésre szánt projekt</h5>
+                        <h5>Class importálása</h5>
                       </div>
                     </div>
+                    <div class="carousel-item">
+                        <img src="imgs/generated.png" class="d-block w-100" alt="...">
+                        <div class="carousel-caption d-none d-md-block">
+                          <h5>Egy legenerált metódus</h5>
+                        </div>
+                      </div>
+                    <div class="carousel-item">
+                        <img src="imgs/passed.png" class="d-block w-100" alt="...">
+                        <div class="carousel-caption d-none d-md-block">
+                          <h5>Sikeres teszt</h5>
+                        </div>
+                      </div>
+                      <div class="carousel-item">
+                        <img src="imgs/failed.png" class="d-block w-100" alt="...">
+                        <div class="carousel-caption d-none d-md-block">
+                          <h5>Sikertelen teszt</h5>
+                        </div>
+                      </div>
+                      <div class="carousel-item">
+                        <img src="imgs/vcs.png" class="d-block w-100" alt="...">
+                        <div class="carousel-caption d-none d-md-block">
+                          <h5>Verziókövetés</h5>
+                        </div>
+                      </div>
+                      <div class="carousel-item">
+                        <img src="imgs/help.png" class="d-block w-100" alt="...">
+                        <div class="carousel-caption d-none d-md-block">
+                          <h5>Segítség</h5>
+                        </div>
+                      </div>
+
+                      <div class="carousel-item">
+                        <img src="imgs/projektfa.png" class="d-block w-100" alt="...">
+                        <div class="carousel-caption d-none d-md-block">
+                          <h5>Egy tesztelésre szánt projekt</h5>
+                        </div>
+                      </div>
+                      <div class="carousel-item">
+                        <img src="imgs/projektfa.png" class="d-block w-100" alt="...">
+                        <div class="carousel-caption d-none d-md-block">
+                          <h5>Egy tesztelésre szánt projekt</h5>
+                        </div>
+                      </div>
                   </div>
                   <a class="carousel-control-prev" href="#slideToNext" role="button" data-slide="prev">
                     <i class="fas fa-chevron-left fa-2x"></i>
@@ -217,86 +266,94 @@
     <div class="asd" id="hotkeys">
         <h2 class="text-center">Gyorsbillentyűk, <span>hotkeys</span></h2>
         <div class="container">
-            <p class="text-justify" style="padding: 2%;"> Az IntelliJ IDEA gyorsbillentyűparancsokkal,másnéven "hotkey"-ekkel rendelkezik a parancsok többségéhez, amelyek a szerkesztéshez, a navigációhoz, a refaktoráláshoz, a hibakereséshez és más feladatokhoz kapcsolódnak. Ezeknek a gyorsbillentyűknek a használata segít hozzá a gyorsabb munkavégzéshez. </p>
+            <p class="text-justify" style="padding: 2%; font-size: 1.2rem;"> Az IntelliJ IDEA gyorsbillentyűparancsokkal, másnéven "hotkey"-ekkel rendelkezik a parancsok többségéhez, amelyek a szerkesztéshez, a navigációhoz, a refaktoráláshoz, a hibakereséshez és más feladatokhoz kapcsolódnak. Ezeknek a gyorsbillentyűknek a használata segít hozzá a gyorsabb munkavégzésben. </p>
         </div>
 
 
-        <div class="container" style="width: 100%">
+        <div class="doboz" style="width: 100%">
             
-            <div class="col-lg-12 col-12">
-                <div class="container" >
-                    <p class="bill"><kbd>CTRL</kbd>+<kbd>S</kbd></p>
-                    <p>Mentés..</p>
-                </div>
-                <div class="container" >
+            <div class="row">
+                <div class="col-lg-3 col-12" >
+                    <p class="bill"><kbd>Shift</kbd>+<kbd>F9</kbd></p>
+                    <p>Ezzel lehet hibakeresési módban futtatni az Intellij projektet.</p>
+                </div>     
+                <div class="col-lg-3 col-12" >
                     <p class="bill"><kbd>ALT</kbd>+<kbd>ENTER</kbd></p>
                     <p>Elem classpath importálása..</p>
                 </div>
-                <div class="container" >
-                    <p class="bill"><kbd>Shift</kbd>+<kbd>Shift</kbd></p>
-                    <p>Keresés mindenhol az intelliJ-ben. Ami még jobban kielemezve a következőt jelenti gyorsan megtalálhat bármilyen fájlt, műveletet, szimbólumot, eszközablakot vagy beállítást az IntelliJ IDEA-ban, a projektben és az aktuális Git-tárban..</p>
-                </div>
-                <div class="container" >
-                    <p class="bill"><kbd>Ctrl</kbd>+<kbd>Shift</kbd>+<kbd>A</kbd></p>
-                    <p>Parancs keresése és futtatása...</p>
-                </div>
-                <div class="container" >
-                    <p class="bill"><kbd>Ctrl</kbd>+<kbd>W</kbd>, <kbd>Ctrl</kbd>+<kbd>Shift</kbd>+<kbd>W</kbd></p>
-                    <p>Kijelölés bővítése, csökkentése..</p>
-                </div>                    
-                <div class="container" >
-                    <p class="bill"><kbd>Ctrl</kbd>+<kbd>Alt</kbd>+<kbd>S</kbd></p>
-                    <p>Billentyűtérkép a beállítások párbeszédpanelen belül..</p>
-                </div>
-                <div class="container" >
-                    <p class="bill"><kbd>Ctrl</kbd>+<kbd>E</kbd></p>
-                    <p>Mostanában megnyitott fájlok..</p>
-                </div>   
-                <div class="container" >
-                    <p class="bill"><kbd>Alt</kbd>+<kbd>Insert</kbd></p>
-                    <p>Előre legenerálható kódok..</p>
-                </div>   
-                <div class="container" >
-                    <p class="bill"><kbd>Ctrl</kbd>+<kbd>P</kbd></p>
-                    <p>Ezzel a billentyűzetparanccsal lehet a már bezárt ablakokat újból meghívni.</p>
-                </div>   
-                <div class="container" >
-                    <p class="bill"><kbd>Shift</kbd>+<kbd>F6</kbd></p>
-                    <p>Ezzel a billentyűzetparanccsal lehet átnevezni a kódban a fájlok, könyvtárak, csomagok, modulok nevét és az azokra vonatkozó összes hivatkozást.</p>
-                </div>   
-                <div class="container" >
+                <div class="col-lg-3 col-12" >
                     <p class="bill"><kbd>Ctrl</kbd>+<kbd>Y</kbd></p>
                     <p>Egy egész sort töröl.</p>
                 </div>   
-                <div class="container" >
-                    <p class="bill"><kbd>Ctrl</kbd>+<kbd>D</kbd></p>
-                    <p>Duplikálja aaza pontos másolatot készít a már kijelölt sor vagy kijelölt elemről.</p>
+                <div class="col-lg-3 col-12" >
+                    <p class="bill"><kbd>Ctrl</kbd>+<kbd>Shift</kbd>+<kbd>A</kbd></p>
+                    <p>Parancs keresése és futtatása...</p>
+                </div>
+                <div class="col-lg-3 col-12" >
+                    <p class="bill"><kbd>Ctrl</kbd>+<kbd>W</kbd>, <kbd>Ctrl</kbd>+<kbd>Shift</kbd>+<kbd>W</kbd></p>
+                    <p>Kijelölés bővítése, csökkentése..</p>
+                </div>                    
+                <div class="col-lg-3 col-12" >
+                    <p class="bill"><kbd>Ctrl</kbd>+<kbd>Alt</kbd>+<kbd>S</kbd></p>
+                    <p>Billentyűtérkép a beállítások párbeszédpanelen belül..</p>
+                </div>
+                <div class="col-lg-3 col-12" >
+                    <p class="bill"><kbd>Ctrl</kbd>+<kbd>E</kbd></p>
+                    <p>Mostanában megnyitott fájlok..</p>
                 </div>   
-                <div class="container" >
-                    <p class="bill"><kbd>Shift</kbd>+<kbd>F9</kbd></p>
-                    <p>Ezzel lehet hibakeresési módban futtatni az Intellij projektemet.</p>
-                </div>      
+                <div class="col-lg-3 col-12" >
+                    <p class="bill"><kbd>Alt</kbd>+<kbd>Insert</kbd></p>
+                    <p>Előre legenerálható kódok..</p>
+                </div>   
+                <div class="col-lg-3 col-12" >
+                    <p class="bill"><kbd>Ctrl</kbd>+<kbd>P</kbd></p>
+                    <p>Ezzel a billentyűzetparanccsal lehet a már bezárt ablakokat újból meghívni.</p>
+                </div>   
+                <div class="col-lg-3 col-12" >
+                    <p class="bill"><kbd>Shift</kbd>+<kbd>F6</kbd></p>
+                    <p>Ezzel a billentyűzetparanccsal lehet átnevezni a kódban a fájlok, könyvtárak, csomagok, modulok nevét és az azokra vonatkozó összes hivatkozást.</p>
+                </div>
+                <div class="col-lg-3 col-12" >
+                    <p class="bill"><kbd>Shift</kbd>+<kbd>Shift</kbd></p>
+                    <p>Keresés mindenhol az intelliJ-ben. Gyorsan megtalálhat bármilyen fájlt, műveletet, szimbólumot, eszközablakot vagy beállítást a projektben és az aktuális Git-tárban..</p>
+                </div>   
+
+                <div class="col-lg-3 col-12" >
+                    <p class="bill"><kbd>Ctrl</kbd>+<kbd>D</kbd></p>
+                    <p>Duplikálja, azaz pontos másolatot készít a már kijelölt sor vagy kijelölt elemről.</p>
+                </div>   
+                
             </div>
+            <p class="text-right">További gyorsbillentyűk az IntelliJ <a href="https://resources.jetbrains.com/storage/products/intellij-idea/docs/IntelliJIDEA_ReferenceCard.pdf">billentyűtérképén</a>..</p>
         </div>
+
     </div>
 
-        <div class="asd" id="minta" style="background-image: linear-gradient(rgb(207, 248, 250),white);">
+        <div class="asd" id="minta" style="background-image: linear-gradient(rgb(226, 226, 255),white);">
+            <div class="jumbotron" id="jumbo">
+                <h1 class="display-5 text-center">Minta<span>feladatok</span></h1>
+                <hr class="my-1">
+              </div>
                 <div class="container">
-                    <h2 class="text-center" style="padding: 60px;">Mintafeladatok</h2>
                     <div>
                         <div class="row">
+                            <div class="text-left">
+                                <h5>Készítsünk tesztet egy egyszerű átváltó metódusra.. (a kilométer és méter ismeretével méterbe..)</h5>
+                            </div>
+
                             <div class="col-lg-6 col-12">
-                                <pre class="code">
+                                <pre class="code1">
 public class TDDProjekmukaEgyikFeladat {
     @Test
-    @DisplayName("Az első általunk kitalált feladat teszetelése")
+    @DisplayName("Első feladat")
     public void elsoFeladatTest() {
+
         assertEquals(-1, kiSzamol(-64, -10));
         assertEquals(0, kiSzamol(0, 0));
         assertEquals(10256, kiSzamol(10, 256));
         assertEquals(-1, kiSzamol(45, -5));
         assertEquals(-1, kiSzamol(-5, 45));
-        assertEquals(-1, kiSzamol(35, 1230));
+        assertEquals(36230, kiSzamol(35, 1230));
         assertEquals(-1, kiSzamol(-3, 1003));
         assertEquals(6000, kiSzamol(6, 0));
         assertEquals(124, kiSzamol(0, 124));
@@ -304,24 +361,20 @@ public class TDDProjekmukaEgyikFeladat {
 }
     
     private int kiSzamol(int km, int m) {
-           if (km < 0 || m < 0 || m > 1000)
+           if (km < 0 || m < 0 ||)
                return -1;
         return 1000*km+m;
      }
 }
-    
-    
-    
                                 </pre>
                             </div>
                             <div class="col-lg-6 col-12">
                                 <p>
-                                    <b>Értelmezési tartomány megadása</b> 
-                                       <p>1. paraméter : km : 1-től bármennyi lehet
-                                        2. paraméter : m : 0-1000-ig</p> 
+                                    <b>Értelmezési tartomány:</b> 
+                                       <p>Egész számok halmaza</p> 
                                 <p>
-                                   <b>Értékkészlet meghatározása</b>  
-                                    <p>Az adott érték átváltása km-ből m-be.</p> 
+                                   <b>Értékkészlet:</b>  
+                                    <p>Egész számok halmaza</p> 
                                 </p>
                                 <p> 
                                    <b>Kategóriák meghatározása:</b> 
@@ -329,17 +382,78 @@ public class TDDProjekmukaEgyikFeladat {
                                     <li>mindkettő negatív</li> 
                                     <li>mindkettő nulla</li>
                                     <li>mindkettő jó</li>
-                                    <li>A p1 pozitív, a p2 negatív</li>
-                                    <li>A p1 negatív, a p2 pozitív</li>
-                                    <li>p1 pozitív, a p2 túlcsordult</li>
-                                    <li>p1 negatív, a p2 túlcsordult</li>
-                                    <li>p1 pozitív, a p2 nulla (térjen vissza a rendes értékkel)</li>
-                                    <li>p1 nulla, p2 negatív  (ilyen esetben is a rendes értéket adja vissza)  </li>
+                                    <li>egyik pozitív, a másik negatív</li>
+                                    <li>egyik pozitív, a másik túlcsordult</li>
+                                    <li>egyik negatív, a másik túlcsordult</li>
+                                    <li>egyik pozitív, a másik nulla (térjen vissza a rendes értékkel)</li>
+                                    <li>egyik nulla, másik negatív  (ilyen esetben is a rendes értéket adja vissza)</li>
                                     </ul>
 
                                   Ha hibás értéket adunk át paraméterként, akkor térjen vissza -1-el</p>
                                 </p>
                             </div>
+                        </div>
+
+                        <div class="row">
+                            <div class="text-center">
+                                <h5>Készítsünk tesztet, mely egy megadott óraszámot és percszámot átvált percbe.</h5>
+                            </div>
+                            <div class="col-lg-6 col-12">
+                                <p>
+                                    <b>Értelmezési tartomány:</b> 
+                                        <p>Egész számok mind az óra, mind a perc tekintetében.</p>
+                                <p>
+                                   <b>Értékkészlet:</b>  
+                                   <p>Óra: 0-23</p> 
+                                   <p>Perc: 0-59</p>
+                                    
+                                </p>
+                                <p> 
+                                   <b>Kategóriák meghatározása:</b> 
+                                    <ul>
+                                    <li>mindkettő negatív</li> 
+                                    <li>mindkettő nulla</li>
+                                    <li>mindkettő jó</li>
+                                    <li>egyik nulla, másik negatív</li>
+                                    <li>egyik nulla, másik túlcsordult</li>
+                                    <li>egyik jó, másik negatív</li>
+                                    <li>egyik jó, másik túlcsordult</li>
+                                    </ul>
+                                <p>Ha hibás értéket adunk át paraméterként, akkor térjen vissza -1-el, ha túlcsordultat, -2-vel.</p>
+                                </p>
+                            </div>
+                            <div class="col-lg-6 col-12">
+                                <pre class="code1">
+public class TDDProjekmukaMasikFeladat {
+    @Test
+    @DisplayName("Második feladat")
+    public void masodikFeladatTest() {
+
+        assertEquals(-1,toPerc(-2,-4));
+        assertEquals(0,toPerc(0,0));
+        assertEquals(-1,toPerc(-2,0));
+        assertEquals(-1,toPerc(0,-4));
+        assertEquals(-2,toPerc(24,0));
+        assertEquals(-2,toPerc(0,61));
+        assertEquals(-1,toPerc(2,63));
+        assertEquals(-1,toPerc(30,2));
+        assertEquals(-1,toPerc(-2,4));
+        assertEquals(-1,toPerc(2,-4));
+        assertEquals(694,toPerc(11,34));
+
+
+}
+    private int toPerc(int ora, int perc){
+        if (ora < 0 || perc < 0)
+            return -1;
+        if (ora > 23 || perc > 59)
+            return -2;
+        return ora * 60 + perc;
+    }
+}
+                                </pre>
+                            </div>
+
                         </div>
                         </div>
                     </div>
@@ -381,10 +495,10 @@ public class TDDProjekmukaEgyikFeladat {
                     $('html').animate({scrollTop: $(getAttr).offset().top}, 1000);
                 });
             })
-                //Get the button:
+                
                 mybutton = document.getElementById("myBtn");
 
-                // When the user scrolls down 20px from the top of the document, show the button
+                
                 window.onscroll = function() {scrollFunction()};
 
                 function scrollFunction() {
@@ -395,10 +509,10 @@ public class TDDProjekmukaEgyikFeladat {
                 }
                 }
 
-                // When the user clicks on the button, scroll to the top of the document
+                
                 function topFunction() {
-                document.body.scrollTop = 0; // For Safari
-                document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
+                document.body.scrollTop = 0; 
+                document.documentElement.scrollTop = 0; 
                 }
         </script>
     </body>

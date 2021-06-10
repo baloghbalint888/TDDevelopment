@@ -3,12 +3,12 @@ header {
     background-size: cover;
 }
 .asd{
-    background-image: linear-gradient(white,rgb(207, 248, 250));
+    background-image: linear-gradient(white,rgb(226, 226, 255));
 }
 .sep{
     height: 3px;
     border-width:0;
-    background-color: rgb(144, 210, 221);
+    background-color: black;
     width: 100%;
     margin: 0%;
 }
@@ -33,10 +33,25 @@ header {
 .code{
     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     font-weight: bold;
-    border: none;
     overflow-x: hidden;
     margin: 30px;
+
     
+}
+.code1{
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-weight: bold;
+    overflow-x: hidden;
+    margin: 30px;
+    border:solid black;
+    border-width:1px 1px;
+    border-radius: 2%;
+    background-color: rgba(0, 0, 0, .1);
+
+}
+
+.code1:hover{
+    background-color: rgba(0, 0, 0, .05);
 }
 .lista1 li{
     font-size: larger;
@@ -74,7 +89,10 @@ header {
     height: 100%;
     width: 100%;
 }
+#jumbo{
+    background-color: transparent;
 
+}
 h1{
     size: 100px;
 }
@@ -109,7 +127,7 @@ kbd{
 }
 #hotkeys{
     padding:5%;
-    background-image: linear-gradient(white,rgb(207, 248, 250));
+    background-image: linear-gradient(white,rgb(226, 226, 255));
 }
 .nav-link:hover{
     font-size: 20px;
@@ -224,14 +242,12 @@ header button:hover a {
 }
 
 
-#doboz{
-    border:black 5px;
-}
+
 .about-us {
     position: relative;
     padding: 100px 0;
     font-family: 'Open Sans', sans-serif;
-    background-image: linear-gradient(white,rgb(207, 248, 250));
+    background-image: linear-gradient(white,rgb(226, 226, 255));
     
 }
 
@@ -290,33 +306,59 @@ p, h2{
     margin-bottom: 5px;
 }
 
+#minta h5{
+    font-size: 1.5rem;
+    padding: 10px;
 
-
+}
+#minta .row{
+    padding-bottom: 40px;
+    border: solid black;
+    border-width: 1px 1px;
+    background-color:rgba(118, 226, 245, 0.1);
+    margin: 40px;
+}
+#minta b{
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+#minta li{
+    padding-bottom: 0.1rem;
+}
 .about-us .first {
     width: 100px;
     height: 200px;
     position: absolute;
-    background-image: linear-gradient(skyblue,white);
+    background-image: linear-gradient(rgba(0,0,0,1),rgba(0, 0, 0,0.0));
     top: 0px;
-    z-index: 2;
-    margin-right: 100px;
+    z-index: 3;
+    right: 10%;
 
 }
 
 
-.agency .second {
+.about-us .second {
     width: 100px;
     height: 200px;
     position: absolute;
-    background-image: linear-gradient(skyblue,white);
-    right: 34px;
-    z-index: 2;
-    margin-left: 100px;
-    top: 100%;
-    left: 82%;
+    background-image: linear-gradient(rgba(0,0,0,1),rgba(0, 0, 0,0.0));
+    z-index: 3;
+    left: 10%;
+    top: 0px;
+    
     
 }
-
+.doboz div{
+    font-family: monospace;
+    text-align: center;
+    font-size: 1.2rem;
+    padding: 10px;
+    font-weight: bold;
+}
+.doboz .bill:hover{
+    font-size: larger;
+    
+}
 ol{
     margin: auto;
 }
@@ -330,7 +372,7 @@ li{
     margin-bottom: 100px;
     font-family: 'Open Sans', sans-serif;
     height: auto;
-    background-image: linear-gradient(rgb(207, 248, 250),white);
+    background-image: linear-gradient(rgb(226, 226, 255),white);
     margin-bottom: 0px;
 }
 
@@ -379,7 +421,7 @@ li{
 /* agency */
 
 .agency {
-    background-image: linear-gradient(rgb(207, 248, 250),white);
+    background-image: linear-gradient(rgb(226, 226, 255),white);
     font-family: 'Open Sans', sans-serif;
     background-size: cover;
     background-position: top;
@@ -398,7 +440,7 @@ footer, footer a {
 footer {
     display: block;
     overflow: hidden;
-    background-image: linear-gradient(to right, skyblue,white);
+    background-image: linear-gradient(to right, rgb(226, 226, 255),white);
 }
 
 footer a:hover {
